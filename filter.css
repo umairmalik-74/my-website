@@ -1,0 +1,105 @@
+.filters {
+  width: 28rem;
+  background-color: var(--theme--bg--color);
+  padding: 2rem;
+  box-shadow: 0 .4rem 2rem rgba(0,0,0,0.05);
+  font-family: 'Poppins', sans-serif;
+  border-radius: 1rem;
+  -webkit-border-radius:1rem;
+  -moz-border-radius:1rem;
+  -ms-border-radius:1rem;
+  -o-border-radius:1rem;
+}
+/* Filter block spacing */
+.filter-block {
+  margin-bottom: 3rem;
+}
+/* Filter labels */
+.filters label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--common--heading--color);
+  margin-bottom: 1rem;
+}
+.filter-block input[type="range"] {
+  width: 100%;
+  appearance: none;
+  background: transparent;
+  height: 2rem;
+}
+/* Chrome / Safari */
+.filter-block input[type="range"]::-webkit-slider-runnable-track {
+  height: 0.70rem;
+  background: var(--gradient--light--grey);
+  /* border: .1rem solid red; */
+  border-radius: 1rem;
+  position: relative;
+}
+.filter-block input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  margin-top: -.5rem; /* aligns thumb vertically */
+  height: 1.5rem;
+  width: 1.5rem;
+  background: var(--btn--main--color);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+}
+.filter-block input[type="range"]::-webkit-slider-runnable-track::before {
+  content: '';
+  height: 100%;
+  background-color: var(--btn--main--color);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  border-radius: 1rem;
+  width: calc((var(--val, 0) - 10) / 140 * 100%);
+}
+/* Firefox */
+.filter-block input[type="range"]::-moz-range-track {
+  height: 0.5rem;
+  background: transparent;
+  border: .1rem solid var(--btn--main--color);
+  border-radius: 1rem;
+}
+.filter-block input[type="range"]::-moz-range-progress {
+  background-color: var(--btn--main--color);
+  height: 0.5rem;
+  border-radius: 1rem;
+}
+.filter-block input[type="range"]::-moz-range-thumb {
+  height: 1.5rem;
+  width: 1.5rem;
+  background: var(--btn--main--color);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+/* IE/Edge Legacy */
+.filter-block input[type="range"]::-ms-track {
+  height: 0.5rem;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+.filter-block input[type="range"]::-ms-fill-lower {
+  background: var(--btn--main--color);
+  border-radius: 1rem;
+}
+.filter-block input[type="range"]::-ms-fill-upper {
+  background: transparent;
+  border: .1rem solid var(--btn--main--color);
+  border-radius: 1rem;
+}
+.filter-block input[type="range"]::-ms-thumb {
+  height: 1.5rem;
+  width: 1.5rem;
+  background: var(--btn--main--color);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}

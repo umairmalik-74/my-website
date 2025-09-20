@@ -1,0 +1,98 @@
+/* Cart container */
+.cart-container {
+  max-width: 900px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 .4rem 2rem rgba(0,0,0,0.05);
+  padding: 2rem;
+}
+/* Heading */
+.cart-container h2 {
+  font-weight: 700;
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+  color: var(--common--heading--color);
+}
+/* Cart table */
+.cart-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.cart-table thead tr {
+  background-color: var(--btn--main--color, #6a0dad);
+  color: #fff;
+}
+.cart-table th,
+.cart-table td {
+  padding: 1rem 1.2rem;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+  vertical-align: middle;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+/* Product info cell */
+.product-info {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+.product-info img {
+  width: 60px;
+  height: 60px;
+  border-radius: 0.8rem;
+  object-fit: cover;
+}
+/* Quantity input */
+input[type="number"] {
+  width: 60px;
+  padding: 0.4rem;
+  font-size: 1.4rem;
+  border: 1px solid #ccc;
+  border-radius: 0.6rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+input[type="number"]:focus {
+  border-color: var(--btn--main--color);
+}
+/* Remove button */
+.remove-btn {
+  background-color: var(--btn--main--color);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.4rem;
+  transition: background-color 0.3s ease;
+}
+.remove-btn:hover {
+  background-color: var(--btn--hover--color); /* Darker purple */
+}
+/* Cart summary section */
+.cart-summary {
+  margin-top: 2rem;
+  text-align: right;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--btn--main--color);
+}
+/* Checkout button */
+.checkout-btn {
+  margin-top: 1rem;
+  background-color: var(--btn--main--color);
+  color: var(--text--white--color);
+  border: none;
+  padding: 1rem 2.5rem;
+  font-size: 1.6rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  font-weight: 700;
+  transition: background-color 0.3s ease;
+}
+.checkout-btn:hover {
+  background-color: var(--btn--hover--color);
+}

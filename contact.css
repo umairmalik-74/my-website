@@ -1,0 +1,78 @@
+.contact-section {
+  padding: 6rem 2rem;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9;
+}
+.contact-layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+  justify-content: space-between;
+}
+.contact-form {
+  flex: 1 1 40rem;
+  background: white;
+  padding: 3rem;
+  border-radius: 1rem;
+  box-shadow: 0 .4rem 2rem rgba(0,0,0,0.05);
+}
+.contact-form h2 {
+  font-size: 2.8rem;
+  color: var(--btn--main--color);
+  margin-bottom: 1rem;
+}
+.contact-form p {
+  color: #666;
+  margin-bottom: 2rem;
+  font-size:1.5rem;
+}
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 1rem 1.4rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.8rem;
+  font-size: 1.5rem;
+}
+.btn-submit {
+  background: var(--btn--main--color);
+  color: white;
+  border: none;
+  padding: 1rem 2.5rem;
+  font-size: 1.5rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn-submit:hover {
+  background-color: #4b0785;
+}
+.contact-info {
+  flex: 1 1 30rem;
+  padding: 2rem;
+}
+.contact-info h3 {
+  font-size: 2.2rem;
+  color: var(--btn--main--color);
+  margin-bottom: 2rem;
+}
+.contact-info p {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #444;
+}
+.contact-info i {
+  margin-right: 1rem;
+  color: var(--btn--main--color);
+}
+.social-icons a {
+  display: inline-block;
+  font-size: 1.8rem;
+  color: var(--btn--main--color);
+  margin-right: 1.5rem;
+  transition: 0.3s;
+}
+.social-icons a:hover {
+  color: #4b0785;
+}
